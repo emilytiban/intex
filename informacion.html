@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa El Oro</title>
+    <link rel="stylesheet" href="informacion.css">
+    <style>
+        body {
+            font-family: "Oswald-Variable", sans-serif;
+            margin: 0;
+            background-color: #f0f8f4; 
+            color: #333;
+            line-height: 1.6;
+            perspective-origin: 50% -100px; 
+            perspective: 1500px;
+            overflow-x: hidden; 
+        }
+
+
+        header {
+            margin: 20px auto; 
+            padding: 20px;
+            text-align: center;
+            border: 3px solid #b87905; 
+            background: linear-gradient(135deg, #0874da, #0419d1); 
+            color: rgb(27, 151, 27);
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(193, 214, 3, 0.2); 
+        }
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+
+            transition: background-color 0.3s ease;
+        }
+
+        nav li a:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        main {
+            padding: 20px;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 30px; 
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c8e6c9; 
+            width: 80%; 
+            max-width: 960px; 
+        }
+
+        section h2 {
+            color: #214d1e;
+            border-bottom: 2px solid #214d1e;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        #home {
+            border-left: 5px solid #386641; 
+        }
+
+        #about {
+            border-right: 5px dotted #214d1e; 
+        }
+
+        #contact {
+            border-bottom: 5px dashed #386641;
+        }
+        #contact p a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        #contact p a:hover {
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 15px; 
+            margin-top: 30px;
+            background-color: #214d1e; 
+            color: white;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        footer:hover {
+            transform: rotate(2deg); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
+        }
+        .cube-container {
+            width: 200px; 
+            height: 200px;
+            margin: 20px auto; 
+            perspective: 1000px;
+        }
+
+        .cube {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform-origin: 50% 50%;
+            transform: rotateY(45deg) rotateX(0deg);
+            transition: transform 10s ease-in-out;
+        }
+
+        .cube-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: none; 
+            border: none;
+            box-sizing: border-box;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cube-face img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .cube-face.front  { transform: translateZ(100px); }
+        .cube-face.back   { transform: rotateY(180deg) translateZ(100px); }
+        .cube-face.right  { transform: rotateY(90deg) translateZ(100px); }
+        .cube-face.left   { transform: rotateY(-90deg) translateZ(100px); }
+        .cube-face.top    { transform: rotateX(90deg) translateZ(100px); }
+        .cube-face.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+        body:hover .cube {
+            transform: rotateY(405deg) rotateX(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecuatronic Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cube-container">
+            <div class="cube">
+                <div class="cube-face front"><img src="imagen1.jpg" alt="Imagen frontal"></div>
+                <div class="cube-face back"><img src="imagen1.jpg" alt="Imagen trasera"></div>
+                <div class="cube-face right"><img src="imagen1.jpg" alt="Imagen derecha"></div>
+                <div class="cube-face left"><img src="imagen1.jpg" alt="Imagen izquierda"></div>
+                <div class="cube-face top"><img src="imagen1.jpg" alt="Imagen superior"></div>
+                <div class="cube-face bottom"><img src="imagen1.jpg" alt="Imagen inferior"></div>
+            </div>
+        </div>
+
+        <section id="home">
+            <h2>Bienvenidos a Ecuatronic Store</h2>
+            <p>Ecuatronic Store es una empresaen la cual aparte de brindarte un buen servicio tambien conocceras lo que es eficiencia y tecnología al alcance de tu mano, con Ecuatronic Store siempre estarás un paso adelante. ¡Innovación y calidad que marcan la diferencia!"
+            </p>
+            <p>Explora nuestra página para conocer más sobre nuestros programas, servicios y la comunidad.</p>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>"Ecuatronic Store, una empresa joven con el compromiso de ofrecerte lo mejor en tecnología y servicio. Nos dedicamos a brindarte soluciones rápidas, eficientes y de calidad. A pesar de nuestro corto tiempo, nos destacamos por la confianza y satisfacción de nuestros clientes. ¡Estamos aquí para hacerte la vida más fácil con productos y servicios innovadores!".</p>
+            <p "Ecuatronic Store , aunque joven, se destaca por ofrecer servicios de calidad y tecnología de vanguardia. ¡Tu satisfacción es nuestra prioridad ".</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para más información, no dudes en contactarnos a través de los siguientes medios:</p>
+            <ul>
+                <li>Email: <a href="@ecuatronicstore">danielaacostaecuatronic88@gmail.com</a></li>
+                <li>Teléfono: 0998876543</li>
+                <li>Dirección: Teofilo lopez</li>
+            </ul>
+            <p>¡Tienes alguna dudanosotros te la quitamos </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Ecuatronic Store </p>
+    </footer>
+</body>
+</html>

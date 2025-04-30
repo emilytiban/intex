@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Oswald-Variable";
+    src: url(Oswald-VariableFont_wght.ttf);
+}
+
+header {
+    background-color: hsl(177, 90%, 45%);
+    color: rgb(26, 190, 168);
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: hsl(192, 87%, 43%);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}

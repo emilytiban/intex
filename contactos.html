@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuatronic Store</title>
+    <link rel="stylesheet" href="contacto.css">
+    <style>
+         body{
+            font-family: "Oswald-Variable";
+         }
+    </style>
+    <style>
+        body {
+            font-family: "Oswald-Variable";
+        }
+        <style>
+    body {
+        font-family: "Oswald-Variable";
+    }
+
+    #contact-form {
+        width: 80%;
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        animation: flotar 4s ease-in-out infinite;
+    }
+
+    @keyframes flotar {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1> Ecuatronic Store</h1>
+        <p>La mejor tecnologia y lo mejor lo encuentras en el Teofilo lopez ubicado en la ciudad de Ambato</p>
+    </header>
+    <main>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Tipo de Servicio electronico:</label>
+            <select id="service" name="service" required>
+                <option value="consultoria">Lo mejor de lo mejor</option>
+                <option value="Reclamos">Reclamo de servicios</option>
+                <option value="Ideas">Ideas de Ecuatronic Store</option>
+            </select>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="danielaacostaecuatronic88@gmail.com"></div>
+    </main>
+</body>
+</head>
+<body>
+<button class="boton-regresar" onclick="window.location.href='index.html'">Regresar a la Página Principal</button>
+</body>
+</html>

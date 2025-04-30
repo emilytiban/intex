@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Ecuatronic Store</title>
+    <link rel="stylesheet" href="servicios.css">
+    <style>
+</style>
+<style>
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Lista de servicios en forma de tarjetas */
+    .servicios-lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 20px;
+        list-style: none;
+    }
+
+    /* Cuadro flotante individual */
+    .servicio-item {
+        width: 280px;
+        background: linear-gradient(145deg, #e3f2fd, #bbdefb); /* Color suave azul */
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        animation: flotar 3s ease-in-out infinite;
+        cursor: pointer;
+    }
+
+    .servicio-item:hover {
+        transform: translateY(-10px) translateX(10px); /* Movimiento al tocar */
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Imagen dentro del cuadro */
+    .servicio-item img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    /* Títulos y descripciones */
+    .servicio-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #0d47a1;
+    }
+
+    .servicio-descripcion,
+    .servicio-item p {
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Animación de flotación */
+    @keyframes flotar {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-8px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+
+</style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecuatronic Store</h1>
+        <nav>
+            <ul>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <h2>Servicios que ofrecemos</h2>
+            <ul class="servicios-lista">
+                <li class="servicio-item">
+                    <img src="formateo.jpeg" alt="Mantenimiento de un compurtadoras">
+                    <h3>Mantenimiento de un computador</h3>
+                    <p class="servicio-descripcion">"Realizamos mantenimiento completo de tu computador para mejorar su rendimiento, eliminar virus, optimizar el sistema y prolongar su vida útil. ¡Tu equipo como nuevo, funcionando al 100%!"</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="mantenimiento.jpg" alt="Desbloqueamos y formateamos tus compurtadoras">
+                    <h3>Formateo de computadoras</h3>
+                    <p class="servicio-descripcion">"Ofrecemos formateo profesional de tu computador: limpieza total del sistema, instalación de software esencial y optimización para un mejor rendimiento. ¡Devuélvele la velocidad a tu equipo!"</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="imagen 2.jpg" alt="Garantizamos y ofrecemos lomejor para ti">
+                    <h3>Lomejor para ti y tu computador </h3>
+                    <p class="servicio-descripcion">"Lo mejor para ti y tu computador: formateo, mantenimiento, reparación y asesoría técnica con calidad y confianza. ¡En Ecuatronic Store cuidamos tu tecnología como se merece!"</p>
+                </li>
+                <li class="servicio-item">
+                    <img src="imagen 3.jpg" alt="NUESTROS SERVICIOS SONLOSMEJORES">
+                    <h3>Lo mejor en tecnologia lo encuentras en </h3>
+                    <p class="Ecuatronic Store">Si algo no entiendes nosotros te informamos y explicamos como funciona tu maquina</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reseña-perspectiva">
+            <div class="reseña-texto">
+                <p>"Ecuatronic Store es tu tienda especializada en productos electrónicos de última tecnología. Ofrecemos venta de equipos de computación, accesorios y dispositivos móviles de marcas reconocidas. Además, brindamos servicios de reparación y mantenimiento de equipos, con un equipo técnico altamente capacitado. Nos enfocamos en ofrecer soluciones personalizadas y adaptadas a tus necesidades. Con Ecuatronic Store, siempre tendrás lo mejor en tecnología al alcance de tu mano. ¡Visítanos y descubre lo que tenemos para ti!"</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

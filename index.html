@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuatronic Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Oswald-Variable", sans-serif;
+            margin: 0;
+        }
+        header {
+            position: relative;
+            padding: 10px;
+        }
+        nav {
+            margin-top: 50px;
+        }
+        body {
+            line-height: 1.6;
+            margin: 40px;
+            padding: 0;
+            background-color: #07859b;
+            font-size: 30px;
+        }
+
+        header {
+            background:hsl(177, 96%, 27%);
+            color: #0f0404;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #19c7c7;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: rgb(7, 140, 145);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #8d9b0d;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            height: 40px;
+            max-width: 100%;
+            height: 250px;
+        }
+        .imagenes-con-filtros {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px; 
+        }
+
+        .imagenes-con-filtros img {
+            width: 300px; 
+            height: auto;
+            border-radius: 10px; 
+        }
+        #original {
+        }
+        #filtro1 {
+            filter: sepia(1);
+        }
+        #filtro2 {
+            filter: grayscale(1);
+        }
+        #filtro3 {
+            filter: blur(2px);
+        }
+        #filtro4 {
+            filter: invert(1);
+        }
+        #filtro5 {
+            filter: saturate(8);
+        }
+        #filtro6 {
+          filter: hue-rotate(90deg);
+        }
+        #filtro7{
+           filter: opacity(0.5)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="imagen1.jpg" alt="Ecuatronic Store" width="30">
+        <h1>Ecuatronic Store</h1>
+        <nav>
+            <ul>
+                <li><a href="servicios.html">Servicios </a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="contactos.html">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-nosotros">
+            <h2>-¿QUE SOMOS Y DONDE ESTAMOS?</h2>
+            <p>Ecuatronic Storete ofrece la tecnologia mas avanzada tienes alguna duda ven y preguntanos.</p>
+            <p>Brindamos la mejor tecnologia y el mejor servicio:</p>
+            <ul>
+                <li>Telefonos</li>
+                <li>Arreglo de compurtadoras</li>
+                <li>Cosas para tu hogar</li>
+                <li>Y mas</li>
+            </ul>
+            <p>Estamos ubicados en el Teofilo lopez</p>
+            <h1>Una foto de la Infraestructura, Año 2025-2026</h1>
+            <div style="text-align: center; margin-top: 20px;" class="UnidadEducativa">
+                <img style="width:400px; height:400px;" src="imagen 2.jpg"/>
+            </div>
+        </section>
+        <section id="imagenes-con-filtros">
+            <h2>Imágenes con Filtros de Ecuatronic Store</h2>
+            <div class="imagenes-con-filtros">
+                <img id="original" src="imagen 5.jpg" alt="Original">
+                <img id="filtro1" src="imagen 6.webp" alt="Sepia">
+                <img id="filtro2" src="imagen 2.jpg" alt="Escala de grises">
+                <img id="filtro3" src="imagen 3.jpg" alt="Desenfoque">
+                <img id="filtro4" src="imagen 4.jpg" alt="Invertir">
+
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    // Selecciona todas las imágenes de la clase "imagenes-con-filtros"
+    const imagenes = document.querySelectorAll('.imagenes-con-filtros img');
+
+    // Añadir el evento "click" a cada imagen
+    imagenes.forEach(imagen => {
+        imagen.addEventListener('click', () => {
+            // Alternar la clase 'mover-lateral' en cada imagen
+            imagen.classList.toggle('mover-lateral');
+        });
+    });
+</script>
+
+</html>

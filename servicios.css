@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Oswald-Variable";
+    src: url(Oswald-VariableFont_wght.ttf);
+    font-size: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #27c4a9;
+    font-size: 20px;
+}
+
+header {
+    background: hsl(182, 82%, 37%);
+    color: rgb(2, 20, 19);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #003366;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: hsl(116, 44%, 30%);
+    color: rgb(10, 0, 0);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
